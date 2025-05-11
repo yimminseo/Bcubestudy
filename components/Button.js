@@ -11,7 +11,7 @@ export default function Button({
   const buttonClass = [
     boxColor, 
     textColor, 
-    fontSize, 
+    fontSize,`${}`,  // padding은 변수를 사용하여 동적으로 설정
     padding, 
     fullWidth ? 'w-full' : '',  // fullWidth가 true일 때 'w-full' 추가, 아니면 빈 문자열
     disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer opacity-100',  // disabled에 따른 스타일 추가
