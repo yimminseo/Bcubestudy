@@ -11,6 +11,67 @@
     width: 100%;
 }
 
+.property-wrapper {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width:100%;
+    background-color: var(--sub-blue);
+    height: 80px;
+}
+
+.property-wrapper.div{
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    width:1440px;
+    position: relative;
+}
+
+.property-wrapper.frame{
+    align-items: center;
+    border : 1px solid var(--white);
+    border-radius:100px;
+    display : flex;
+    justify-content: center;
+    margin-bottom:-1px;
+    margin-top:-1px;
+    padding:16px 48px;
+    position: relative;
+    width: 172px;
+    background: var(--sub-blue);   /* 원래 파란색 -> var(--sub-blue) */
+    color: white;
+
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.property-wrapper.frame:hover,
+.property-wrapper.frame.active {
+    background: white;
+    color: var(--sub-blue);
+    border-color: var(--sub-blue);
+}
+
+.property-wrapper.text-wrapper {
+    color: inherit;        /* 부모 색상 따라감 */
+    background: none;      /* 배경 없음 */
+    font-family: "Pretendard-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height:32px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+    border: none;
+    padding: 0;
+}
+
+
 .nav .b-CUBE {
     align-items: center;
     display: flex;
@@ -191,6 +252,18 @@
     letter-spacing: 0;
     line-height: normal;
     position: relative;
+    width: fit-content;
+}
+
+.element .text-wrapper-3 {
+    color: var(--medium-blue);
+    font-family: "Pretendard-SemiBold", Helvetica;
+    font-size: 17.1px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
     width: fit-content;
 }
 
